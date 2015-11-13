@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="robots" content="NOINDEX, NOFOLLOW"/>
+	<meta name="keywords" content="Alex Votry, web developers, web developer, web designers, web designer"/>
+	<title>Tabbed</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/fBox.js"></script>
+		<script type="text/javascript" src="fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="fancyBox/source/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js"></script>
+		<script type="text/javascript" src="js/tabbedContent.js"></script>
+        <script type="text/javascript" src="js/Alex.js"></script>
+        <script type="text/javascript" src="js/webDev.js"></script>
+        <link rel="stylesheet" href="css/jquery-ui.DotLuv.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.css" />
+        <link rel="stylesheet" type="text/css" href="fancyBox/source/jquery.fancybox.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="fancyBox/source/helpers/jquery.fancybox-thumbs.css" />
+        <link rel="stylesheet" type="text/css" href="css/TabbedContentAnimate.css" />
+        <link rel="stylesheet" type="text/css" href="css/Alex.css" />
+        <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+		<!-- <link rel="shortcut icon" type="image/png" href="http://eg.com/favicon.png"/> -->
+</head>
+<body>
+<header>
+	<img id = "me" src="images/Alex3.jpeg" alt="photo of me" />
+	<h1>Alex Votry's</h1> 
+	<h2>Personal Portfolio</h2>
+
+</header>
+	<div class="tabbed_content">
+		<div class="tabs">
+			<div class="moving_bg"></div>
+			<span class="tab_item">Home</span>
+			<span class="tab_item">About Me</span>
+			<span class="tab_item">Resume</span>
+			<span class="tab_item">Interests</span>	
+			<span class="tab_item">Guest page</span>
+		</div>
+<!--content has two containers, one for overall wrapping, the other for making the content move as we hover over the items. -->
+		<div class="slide_content">
+			<div class="tabslider">
+				<ul>
+<!-- Home page html -->
+<!-- "web" -->
+					<li><div id="w"></div><div id="e"></div><div id="b">
+<!--"applications"  -->
+					</div><div id="a"></div><div id="p1"></div><div id="p2"></div><div id="l1"></div><div id="i1"></div><div id="c"></div><div id="a2"></div><div id="t"></div><div id="i2"></div><div id="o1"></div><div id="n"></div><div id="s"></div>
+<!--"developer"  -->
+					<div id="d"></div><div id="e2"></div><div id="v"></div><div id="e3"></div><div id="l2"></div>
+					<div id="o2"></div><div id="p3"></div><div id="e4"></div><div id="r"></div></li>
+					<li><div id="stage"></div></li>
+					<li><div id="lightning"></div></li>
+				</ul>
+<!-- "about me" -->
+		<ul>
+			<div id="panel">
+				<button id="pButton">Breif History</button>
+				<button id="cButton">What I'm up to</button>
+				<button id="fButton">What I'll be doing</button>	
+			</div>	
+<!-- "past" -->					
+			<div class="toggler">
+  				<div id="pEffect" >
+					<li><div id="past">
+						<h2>Where I'm from</h2>
+						<p>I was born on a marine base in Cherry Point North Carolina. We moved several times until second grade when we made our
+						home in Oak Harbor, Washington.  In 7th grade my dad bought a TRS80 home computer from Radio Shack.  I learned a little 
+						Basic programming, enough to move some sprites around and shoot each other.</p>
+
+						<p>I moved to Seattle to go to the University of Washington.  I couldn't decide what I wanted to do, and took classes
+						in every subject I could think of.  I finished with a BA in psychology and still no plans.</p>
+
+						<p>I bought a one-way ticket to Japan and found a job coaching international corporations in American 
+						culture and language.</p>
+
+						<p>After 3 years I came back and went back to UW to complete my third year of Japanese. During this time I met
+						the love of my life and convinced her to marry me.  From there, I learned a trade, became a master plumber
+						and started my own business, which I ran for over 15 years.</p>
+
+						<p>During the last 5 years I found I wasn't enjoying what I was doing.  I spent time exploring
+						what I enjoy doing, and found programing was what I enjoyed doing most.  I would write dynamic spread sheets to
+						figure out various data.  I finished a couple on line courses in Excell, but I wanted to do more.</p>
+					</div></li>
+				</div>
+			</div>
+<!--"current"  -->					
+			<div class="toggler">
+  				<div id="cEffect" >
+					<li><div id="current">
+						<h2>Current</h2>
+
+						<p>My wife, Kim and I are still together. We raised two wonderful children, my son has his own family now, and my daughter
+						recently graduated high school as a National Merit Society member.  </p>
+
+						<p>During the last 5 years I found I wasn't enjoying my job.  I spent time exploring
+						what I enjoy doing, and found programing was what I enjoyed doing most.  I would write dynamic spread sheets to
+						figure out various data.  I finished a couple on line courses in Excell, but I wanted to do more.</p>
+
+						<p>I am currently enrolled in the Web Developement program through EDCC. I sold my business this summer and have begun
+						working through the classes full time.  I am really enjoying spending full days at the computer and working through
+						the puzzles programming can provide.</p>
+					</div></li>
+				</div>
+			</div>
+			<div class="toggler">
+  				<div id="fEffect" >
+ <!-- "current" -->
+					<li><div id="future">
+						<h2>Plans for the future</h2>
+
+						<p>I have signed up to take an extensive course in microsoft SQL.  I will be taking a Course like BLOC full stack 
+						web developer training.  This is a 24 week, full time course.</p>
+
+						<p>After all this training I plan to design web applications.</p>
+					</div></li>
+				</div>
+			</div>
+			<div id="question"><img src="images/question.png" alt="question mark"></div>
+			<div id="shadow"></div>
+		</ul>
+<!-- resume page -->			
+		<ul>
+			<li>
+			<div id="resume">
+				<h1>Alex Votry</h1> 
+					<div id="printer"><a id='printer_1' class="fancypdf" data-fancybox-type="iframe" href="images/resume.pdf"><img src="images/printerBig.png" alt='print'/></a></div>
+					<a href="mailto:alexvotry@gmail.com"> email: alexvotry@gmail.com </a>
+				<h3>Computer Skills</h3>
+				<div class='res'>
+					<h4>Internet Skills</h4>
+						<p>Web browsers, mobile devices
+						Web page authoring in HTML5, CSS, and Javascript.
+						Basic networking components, protocols and server configuration
+						Joomla CMS capable
+						Project management skills for individual and team job tasks
+						</p>
+					<h4>Certificates</h4>
+						<p>CIW Internet Business Associate
+						CIW Site Development Associate
+						CIW Javascript Specialist
+						Udemy online Basic Java
+						</p>
+				</div>
+				<div>
+					<h3>Experience</h3>
+						<table class="res">
+							<tr>
+								<td class="yrs">2000 - 2016</td>
+								<td>President, <i>Pride Plumbing Company</i></td>
+							</tr>
+							<tr>
+								<td class="yrs"></td>
+								<td>Owned and operated my own plumbing business. Experienced in all aspects of running 
+								a small business including bookkeeping, payroll, project management, and marketing. Developed efficient systems for office and employee management. 
+								Programed several Excel sheets for productivity and wages.
+								</td>
+							</tr>
+							<tr>
+								<td class="yrs">1997 - 2000</td>
+								<td>Journyman Plumber, <i>Plumbing Joint</i></td>
+							</tr>
+							<tr>
+								<td class="yrs"></td>
+								<td>Moved from apprentice to plumber. Worked independently to trouble shoot and repair all plumbing and heating problems.
+								</td>
+							</tr>
+							<tr>
+								<td class="yrs">1989 - 1993</td>
+								<td>English Teacher, <i>Pheonix Associates</i></td>
+							</tr>
+							<tr>
+								<td class="yrs"></td>
+								<td>Worked as an English teacher and business coach for several large
+								companies in Japan. Lived in Japan, and learned a basic knowledge of Japanese.
+								</td>
+							</tr>		
+						</table>
+					<h3>Education</h3>
+						<table class="res" style="width: 1070px">
+							<tr>
+								<td class="yrs">1989</td>
+								<td>BA in Psychology, <i>University of Washington </i>
+								</td>
+							</tr>
+							<tr>
+								<td class="yrs">1995</td>
+								<td>Completed 3rd year of Japanese, <i>University of Washington </i>
+								</td>
+							</tr>	
+							<tr>
+								<td class="yrs">2014</td>
+								<td>Completed Advanced Excel class, <i>Udemy online</i>
+								</td>
+							</tr>	
+							<tr>
+								<td class="yrs">2014</td>
+								<td>Completed basic Java, <i>Udemy online</i>
+								</td>
+							</tr>	
+							<tr>
+								<td class="yrs">2015</td>
+								<td>Currently enrolled in a 44 credit web development course, <i>EdCC</i>
+								</td>
+							</tr>	
+						</table>
+				</div>
+			</div>
+			</li>
+		</ul>
+<!-- Interests -->
+		<ul>
+			<li>
+			<div id="accordion">
+			  	<h3>Racing</h3>
+				  <div id="racing">
+				  	<div  id="sidebar">
+					    <p>I love racing bicycles.  I’ve been at it for about five years. The last two years I’ve been riding with the Therapeutic  Associates Incorporated.  </p>
+					    <p> It’s nice to ride with a team to help stay motivated, and the sponsorship covers a lot of the costs in racing.  I ride from 400 to 700 miles per month training and racing.  I race in three different bicycle disciplines:</p>
+				    </div>
+				    <div id='main'>
+				    	<a><ul class="bicycle">Road</a>
+					      	<li>  Road racing starts in February and finishes in July. My road races are on Saturday or Sunday and usually about 60 to 70 miles.  The peloton is usually around 40 to 60 riders, so riding shoulder to shoulder is pretty common.</li>
+					      	<li>
+					      	<a class="racing" rel="gallery1" href="images/road.jpg" title="Racing at Volunteer Park"><img class="small" src="images/road.jpg" alt='road racing'/></a>
+
+					      	<a class="racing" rel="gallery1" href="images/PRsprint.jpg" title="Sprinting at S.I.R."><img class="small" src="images/PRsprint.jpg" alt='final sprint'/></a>
+
+					      	<a class="racing" rel="gallery1" href="images/wheelRepair.jpg" title="Repairing a wheel on a training ride"><img class="small" src="images/wheelRepair.jpg" alt='wheel repair'/></a>
+					      	</li>
+					    </ul>
+					    <a><ul class="bicycle">Track</a>
+					      		<li>Track starts in June and ends in September.  The track is in Marymoor Park in Redmond.  Track bikes don’t have any brakes and are a fixed gear.Track has been the most fun over the last few years.  I have upgraded to the elite division in racing and have had a lot of success recently.</li>
+					      		<li>
+					      		<a class="fancybox-thumb" rel="fancybox-thumb" href="images/track.jpg" title="Enjoying the Leader's Jersey"><img class="small" src="images/track.jpg" alt="track" /></a>
+
+					      		<a class="fancybox-thumb" rel="fancybox-thumb" href="images/AlexSky.jpg" title="Beautiful night at the track"><img class="small" src="images/AlexSky.jpg" alt="track" /></a>
+
+					      		<a class="fancybox-thumb" rel="fancybox-thumb" href="images/Marymoor.jpg" title="Young kid on my tail"><img class="small" src="images/Marymoor.jpg" alt="track" /></a>
+
+					      		<a class="fancybox-thumb" rel="fancybox-thumb" href="images/JerseyWinningSprint.jpg" title="Game face"><img class="small" src="images/JerseyWinningSprint.jpg" alt="track" /></a>
+					      		</li>
+						</ul>
+						<a><ul class="bicycle">Cyclocross</a>
+					      		<li>Cyclocross starts in August and ends in January.  Cyclocross is a cross between road racing and mountain bike racing.  We get racers from both disciplines in the race.  It reminds me a bit like a steeplechase since we often have to dismount and jump over barriers or run up steep banks.</li>
+					      		<li><a class="cross" rel="fancybox-thumb" href="images/cross.jpg" title="Through dirt"><img class="small" src="images/cross.jpg" alt="track" /></a>
+
+					      		<a class="cross" rel="fancybox-thumb" href="images/mud.jpg" title="In the mud"><img class="small" src="images/mud.jpg" alt="track" /></a>
+
+					      		<a class="cross" rel="fancybox-thumb" href="images/sand.jpg" title="Across the sand"><img class="small" src="images/sand.jpg" alt="track" /></a>
+
+					      		<a class="cross" rel="fancybox-thumb" href="images/overBarriers.jpg" title="Over barriers"><img class="small" src="images/overBarriers.jpg" alt="track" /></a>
+
+					      		<a class="cross" rel="fancybox-thumb" href="images/Woodland.jpg" title="Worn out"><img class="small" src="images/Woodland.jpg" alt="track" /></a></li>
+					    </ul>
+				  	</div>
+				  </div>
+					  	<h3>Woodworking</h3>						  
+				 	<div id="woodworking">
+						    <p>Woodworking has been a minor interest of mine.  I like making small wooden objects and giving them as gifts.  It has been a nice creative outlet.  I haven’t kept many and didn’t think to take pictures, but I do have a couple examples.</p>
+						  <div class="wood">
+						  	<p> This is a wood relief of a manala for my wife and I.  She made a more elaborate painting, but I thought it would be fun to create a little depth to it.</p>
+						  	<a class="single" href="images/mandala.jpg" title="Mandala"><img class="small" src="images/mandala.jpg" alt="mandala" />
+						  </div>
+						  <div id="main">
+						  	<p> I made this for my daughter when she turned 10.  It's a wand with case.  (She was <i>really</i> into Harry Potter!)</p>
+						  	<a class="single" href="images/closedWand.jpg" title="Wand case"><img class="small" src="images/closedWand.jpg" alt="wand case" /></a>
+						  	<a class="single" href="images/openWand.jpg" title="Wand case"><img class="small" src="images/openWand.jpg" alt="wand case" /></a>
+						  </div>
+					</div>
+					  	<h3>Cabinet making</h3>
+					<div id="cabinet">
+				    	    <p>I also enjoy cabinet making.  Most of this I’ve kept for our house.  The nice thing about making your own furniture, is that you can make it precisely the way you want it.</p>
+							<a class="cabinet" rel="gallery2" href="images/checkerboard1.jpg" title="Checkerboard end table"><img class="small" src="images/checkerboard1.jpg" alt='wheel repair'/></a>
+							<a class="cabinet" rel="gallery2" href="images/OakBookShelf.jpg" title="Oak Book Shelf"><img class="small" src="images/OakBookShelf.jpg" alt='OakBookShelf'/></a>
+							<a class="cabinet" rel="gallery2" href="images/liquorCabinet.jpg" title="Liquor Cabinet"><img class="small" src="images/liquorCabinet.jpg" alt='liquour cabinet'/></a>
+							<a class="cabinet" rel="gallery2" href="images/bookShelf.jpg" title="Book Shelf"><img class="small" src="images/bookShelf.jpg" alt='book shelf'/></a>
+					</div>	
+			</div>	
+			</li> 
+		</ul>
+		<ul>
+			<li><h2><strong>Thank you for visiting my Personal Portfolio!</strong></h2><br/>
+
+		<div id="guest">
+			<p>
+			I have set up this guest book for all the people who have visited my site to
+			sign in and make any comments or offer any advice they wish.
+			</p>
+
+			<p>
+			Please fill out as much of the guest book as you feel comfortable doing.
+			</p>
+
+			<form
+				method="post"
+				action="mailto:nicki.pride.plumbing@gmail.com"
+				id="guestbook"
+				enctype="text/plain"
+				id="guestbook" name="guestbook"
+				onSubmit="return formCheck(this.form);"
+			>
+
+				<!--text box for name-->	
+				Name: <input type="text" id="name" name="name" size="40">
+				<br/>
+				<br/>
+				<!--text box for email-->
+				e-mail address:<input type="text" id="email" name="email" size="40"> <!-- value attribute will put text in box-->
+				<br/>
+				<br/>
+				<p>
+				<!--checkbox questions.  multiple="multiple" would allow more than one answer-->
+				What brought you to my site?<br/>
+				<input type="checkbox" value="friend"/>  Alex told me to check it out<br/>
+				<input type="checkbox" value="WordOfMouth"/>  A friend told me about it<br/>
+				<input type="checkbox" value="search engine"/>  A search engine directed me to your site<br/>
+				<input type="checkbox" value="accident"/>  I came across it by accident<br/>
+				<input type="checkbox" value="other"/>  Other<br/>
+				</p>
+				<br/>
+				<!--text area for adding comments. I could put text in the box by placing within the <textarea>. -->
+				<p>Is there anything about this site you'd like to tell me about?<br/></p>
+				<textarea name="comments" cols="50" rows="4">
+				</textarea>
+				<br/>
+				<br/>
+				<!--can't figure out how to center these yet-->
+				<input type="submit"/>
+				<input type="reset" onclick="clean();"/>
+			</form></li>
+			<li>
+			<div id="final">
+				<img id="jersey" src="images/Jersey1.jpg" alt="last pic">
+			</div></li>
+				</ul>				
+			</div>
+		</div>
+	</div>
+    <div id="wrapper"></div>
+</body>
+</html>

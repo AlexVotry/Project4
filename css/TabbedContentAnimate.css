@@ -1,0 +1,79 @@
+.tabbed_content { /*makes frame of entire tab*/
+	background-color: clear;
+	width: 1330px;
+	height: 100%;
+	margin-left: 300px;
+	margin-top: -62px;
+}
+.tabs {
+	height: 62px; /* height of tab space not the moving tab. */
+	position: relative; /* makes the moving background position to it.  I can move the moving background using left property */
+}
+.tabs .moving_bg { /* moving tab over the words */
+ 	width: 200px; 
+ 	height: 15px;
+ 	margin-left: 15px;
+ 	background: #87cefa;    
+   	 	-moz-opacity:0.5; /* Mozilla */
+    	opacity: 0.5; /* CSS3 */
+ 	background-position: bottom left;
+ 	position: relative;
+ 	 -moz-border-radius: 10px; 
+ 	 -webkit-border-radius: 10px; 
+ 	border-radius: 10px; 
+ 	margin-top: 6px;
+	padding: 10px;
+	padding-bottom: 29px;
+	position: absolute;
+	z-index: 190;
+ } 
+.tabs .moving_bg:after { 
+	content:""; 
+	position: absolute; 
+	top: 100%; 
+	width: 0;
+	height: 0; 
+	margin-left: 90px;
+	border-left: 10px solid transparent; 
+	border-right: 10px solid transparent; 
+	border-top: 20px solid #87cefa; 
+}
+.tabs .tab_item { /* heading titles */
+	display: block;
+	margin-left: 15px;
+	float: left;
+	padding: 15px;
+	width: 200px;
+	color: #fff;
+	text-align: center;
+	z-index: 200;
+	position: relative;
+	cursor: pointer;
+}
+.tabbed_content .slide_content { /* content area */
+	overflow: auto;
+	background-color: #000;
+	background:    
+   	 	-moz-opacity:0.75; /* Mozilla */
+    	opacity: 0.92; /* CSS3 */
+	padding: 20px 0 20px 20px;
+	position: relative;
+	width: 1140px;  /* this is connected to .tabslider ul width */
+	margin-left: 5%;
+	height: 750px;
+}
+.tabslider {
+	width: 6000px; /* 1000px per tab heading */
+}
+.tabslider ul { /* actual content that slides with the hover method */
+	float: left;
+	width:1100px;
+	margin: 0px;
+	padding: 0px;
+	margin-right: 40px;
+}
+.tabslider ul li {
+ 	padding-bottom: 7px;
+ 	color: #fff;
+ 	list-style: none; /*removes the bullet pts. */
+ }
